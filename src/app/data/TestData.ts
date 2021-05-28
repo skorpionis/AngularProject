@@ -23,7 +23,7 @@ export class TestData {
     {id: 1, title: 'Низкий', color: '#e5e5e5'},
     {id: 1, title: 'Средний', color: '#e5c231'},
     {id: 1, title: 'Высокий', color: '#e5691f'},
-    {id: 1, title: 'Низкий', color: '#e5050c'},
+    {id: 1, title: 'Очень высокий', color: '#e5050c'},
   ];
 
   static tasks: Task[] = [
