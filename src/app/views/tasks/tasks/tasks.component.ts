@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {DataHandlerService} from "../../../data/service/data-handler.service";
 import {Task} from "../../../model/Task";
 
@@ -16,8 +16,7 @@ export class TasksComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.tasks = this.dataHandler.getTasks()
-    console.log(this.tasks);
+    this.dataHandler.tasksSubject.subscribe(tasks => this.tasks = tasks)
   }
 
 }
